@@ -3,7 +3,7 @@
 def larger_string(new_str, n):
    result = ""
    # range(from 0 to n)
-   for i in range(n):
+   for x in range(n):
       result = result + new_str
    return result
 
