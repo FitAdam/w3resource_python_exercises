@@ -10,16 +10,14 @@ def foo(a,b):
            # print(f"This is the b {b}")
             foo(b,r)
         else:
-            return print(f"This is the GCD {b}")
+            return print(f"1This is the GCD {b}")
     else:
         if a == 0:
-            return print(f"This is the GCD {b}")
+            return print(f"2This is the GCD {b}")
         elif b == 0:
-            return print(f"This is the GCD {a}")
+            return print(f"3This is the GCD {a}")
         else:
             return print("give something diffirent")
 
-foo(270,192)
-foo(333,222)
-foo(12,17)
-foo(4,6)
+
+foo(14,22)
