@@ -2,8 +2,9 @@
 
 def swap(a,b):
     temp = a
-    b = a
-    return print(f"so now A is {a} and B is {b1}!")
+    a = b
+    b = temp
+    return print(f"so now A is {a} and B is {b}!")
 
 
 swap('a','b')
