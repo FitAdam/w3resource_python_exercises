@@ -3,9 +3,10 @@
 import requests
 from bs4 import BeautifulSoup
 
-URL = 'https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pIUWlnQVAB?hl=en-GB&gl=GB&ceid=GB%3Aen'
+URL = 'https://www.freecodecamp.org/news/'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
-print(soup)
+for title in soup.find_all('a'):
+    print(title.get_text())
