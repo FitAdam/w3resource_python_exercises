@@ -10,6 +10,16 @@ target = 70
 
 """
 
-def sum_of_three(arr):
-    for x in arr:
-        if x + x[+1]
+def subsetsum(array, num):
+    
+    if sum(array) == num:
+        return array
+    if len(array) > 1:
+        for subset in (array[:-1], array[1:]):
+            result = subsetsum(subset, num)
+            if result is not None:
+                return result
+
+
+print(subsetsum([10, 30, 30], 70))
+
